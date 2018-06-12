@@ -1,0 +1,227 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  color: #616161;
+  background-color: #70b6e2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+}
+
+.main, .main__slogan, .main__reg, .main__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main {
+  max-width: 73.125rem;
+  padding: 0 15px;
+  margin: 1.5625rem auto;
+}
+
+.main__slogan {
+  -ms-flex-preferred-size: 42.5%;
+      flex-basis: 42.5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../img/left-bg.png) no-repeat;
+  background-size: cover;
+  padding-left: 3.875rem;
+}
+
+.main__slogan_h1 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main__slogan_h1:after {
+  content: '';
+  display: block;
+  width: 5.75rem;
+  height: 0.25rem;
+  background-color: #FFF;
+  margin-top: 1.4375rem;
+  margin-bottom: 2.6875rem;
+}
+
+.main__slogan_p {
+  color: #c9e7fa;
+  font-family: "Open Sans";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.main__reg {
+  -ms-flex-preferred-size: 57.5%;
+      flex-basis: 57.5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 6.5rem;
+  background-color: #FFF;
+}
+
+.main__reg_h2 {
+  color: #70b6e2;
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.9375rem;
+  padding-top: 7.25rem;
+}
+
+.main__reg_p {
+  color: #616161;
+  font-family: "Myriad Pro";
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1.75rem;
+}
+
+.main__form {
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+input {
+  width: 18.75rem;
+  height: 2.625rem;
+  border: 1px solid #cdd7ec;
+  padding-left: 1.0625rem;
+  border-radius: 2px;
+}
+
+input:focus {
+  border: 2px solid #70b6e2;
+  -webkit-box-shadow: 0 8px 13px rgba(194, 194, 194, 0.4);
+          box-shadow: 0 8px 13px rgba(194, 194, 194, 0.4);
+}
+
+input:nth-of-type(1) {
+  margin-bottom: 1.375rem;
+}
+
+input:nth-of-type(2) {
+  margin-bottom: 1.75rem;
+}
+
+input[placeholder] {
+  color: #d1d1d1;
+}
+
+button {
+  background-color: #70b6e2;
+  border: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 18.75rem;
+  height: 2.625rem;
+  position: relative;
+  margin-bottom: 1.125rem;
+}
+
+button:hover {
+  background-color: #cdd7ec;
+  cursor: pointer;
+}
+
+.form__label {
+  color: #70b6e2;
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.3125rem;
+}
+
+.btn-img {
+  position: absolute;
+  top: 0.8125rem;
+  left: 4.6875rem;
+}
+
+.main__reg_a {
+  color: #70b6e2;
+  text-decoration: underline;
+}
+
+.main__reg_p:last-of-type {
+  margin-left: 0.6875rem;
+  padding-bottom: 8.8125rem;
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+
+  .main__slogan {
+    padding-left: 2rem;
+  }
+
+  .main__reg {
+    padding-left: 3.25rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  .main {
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .main__slogan {
+    padding: 2.1875rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .main__reg {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .main__reg_h2 {
+    padding-top: 1.5625rem;
+  }
+
+  .main__reg_p:last-of-type {
+    padding: 1.5625rem auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
